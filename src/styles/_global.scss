@@ -19,3 +19,51 @@ body {
 a {
   text-decoration: none;
 }
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.width-60 {
+  width: 60%;
+}
+.width-100 {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-controller {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  outline: none;
+}
+
+.primary-button {
+  background-color: $buttonBackgroundColor;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.input-label {
+  color: $textColor;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.margin-top-10 {
+  margin-top: 0.8rem;
+}
+.text {
+  color: $textColor;
+  font-family: $fontFamily;
+}
