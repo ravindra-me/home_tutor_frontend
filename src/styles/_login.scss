@@ -1,0 +1,21 @@
+.login-form-container {
+  .input-label {
+    color: $textColor;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    ::placeholder {
+      color: rgb(251, 251, 251);
+    }
+  }
+  .primary-button {
+    padding: 0.7rem;
+  }
+  .forgot-password {
+    color: red;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
+}
