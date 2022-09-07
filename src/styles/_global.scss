@@ -59,11 +59,16 @@ a {
   color: $textColor;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
+  font-weight: bold;
 }
 .margin-top-10 {
   margin-top: 0.8rem;
 }
 .text {
   color: $textColor;
+  font-family: $fontFamily;
+}
+.secondary-heading {
+  font-size: 2rem;
   font-family: $fontFamily;
 }
