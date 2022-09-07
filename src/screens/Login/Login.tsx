@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+//import custom component
 import Modal from "../../components/Modal/Modal";
+import VerifyEmail from "../../components/VerifyEmail/VerifyEmail";
 export default function Login() {
   const [openModal, setOpenModal] = useState({ open: false, component: null });
   const modalOpen = (component: any) => {
@@ -22,6 +25,9 @@ export default function Login() {
         </section>
         <section className="flex-48 flex justify-center align-center">
           <form action="" className="width-60 login-form-container">
+            {/* <div>
+              <h2 className="secondary-heading">Login</h2>
+            </div> */}
             <div className="flex flex-column">
               <label htmlFor="" className="input-label">
                 Email:
@@ -51,7 +57,7 @@ export default function Login() {
               <p
                 className="forgot-password"
                 onClick={() => {
-                  modalOpen(<div>Hello world</div>);
+                  modalOpen(<VerifyEmail />);
                 }}
               >
                 forgot password?
