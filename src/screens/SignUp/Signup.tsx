@@ -7,19 +7,18 @@ import { updateAlertInfo } from "../../redux/reducers/userSlice";
 type FormEvent = React.FormEvent<HTMLFormElement>;
 type InputEvent = React.ChangeEvent<HTMLInputElement>;
 
+const initialUserDetailsState = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  password: "",
+  mobileNumber: "",
+  reEnterPassword: "",
+  isTeacher: false,
+};
+
 function Signup(props: any) {
   const { userInfo, updateAlertInfo } = props;
-  console.log(userInfo);
-
-  const initialUserDetailsState = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-    mobileNumber: "",
-    reEnterPassword: "",
-    isTeacher: false,
-  };
   const [userDetails, setUserDetails] = useState({
     ...initialUserDetailsState,
   });

@@ -24,9 +24,15 @@ export const userInfoSlice = createSlice({
       state,
       action: PayloadAction<{ open: boolean; message: string }>
     ) => {
-      console.log(current(state), action.payload);
       const { message, open } = action.payload;
-      return { ...state, alertInfo: { ...state.alertInfo, open, message } };
+      return {
+        ...state,
+        alertInfo: {
+          ...state.alertInfo,
+          message,
+          open,
+        },
+      };
     },
   },
 });

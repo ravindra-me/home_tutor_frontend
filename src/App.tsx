@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import RoutesCom from "./routes/Routes";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
@@ -34,14 +34,16 @@ function App(props: any) {
         <Snackbar
           open={userInfo.alertInfo.open}
           anchorOrigin={{ vertical: "top", horizontal: "center" }}
-          autoHideDuration={30}
+          autoHideDuration={6000}
           onClose={() => {
             updateAlertInfo({ open: false, message: "" });
           }}
           style={{ maxWidth: "600px", minWidth: "400px" }}
         >
           <Alert
-            onClose={() => {}}
+            onClose={() => {
+              updateAlertInfo({ open: false, message: "" });
+            }}
             icon={false}
             severity="success"
             style={{
